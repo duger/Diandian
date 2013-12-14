@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="13A603" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="PingLun" representedClassName="PingLun" syncable="YES">
+        <attribute name="p_content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="p_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="p_latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="p_longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="p_pingLunTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="p_user_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Share" representedClassName="Share" syncable="YES">
+        <attribute name="s_content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="s_createdate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="s_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="s_image_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="s_latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="s_locationName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="s_longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="s_sound_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="s_user_id" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relationship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SubShare" syncable="YES"/>
+    </entity>
+    <entity name="SubShare" representedClassName="SubShare" syncable="YES">
+        <attribute name="s_pingLun" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="s_yuYin" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="s_zang" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <attribute name="s_zhuangFa" optional="YES" attributeType="Integer 16" syncable="YES"/>
+        <relationship name="relationship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PingLun" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PingLun" positionX="324" positionY="234" width="128" height="133"/>
+        <element name="Share" positionX="-0" positionY="153" width="128" height="195"/>
+        <element name="SubShare" positionX="153" positionY="189" width="128" height="118"/>
+    </elements>
+</model>

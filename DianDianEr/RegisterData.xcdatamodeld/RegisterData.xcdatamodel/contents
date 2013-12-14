@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12F37" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="RegisterInfo" representedClassName="RegisterInfo" syncable="YES">
+        <attribute name="aAge" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="aName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="aPassword" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="aPhoto" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="aSex" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="RegisterInfo" positionX="160" positionY="192" width="128" height="120"/>
+    </elements>
+</model>
